@@ -37,7 +37,7 @@ class Main extends React.Component {
         </article>
 
         <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Contact</h2>
+          <h2 className="major">Contacto</h2>
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
@@ -73,6 +73,30 @@ class Main extends React.Component {
           {close}
         </article>
 
+        <article id="login" className={`${this.props.article === 'login' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Inicie Sesión</h2>
+          <form method="post" action="#">
+                  <div className="form-group">
+                    <label htmlFor="email">Correo Electronico</label>
+                    <input type="email" className="form-control" placeholder="Email"/>
+                </div><br/>
+                <div className="form-group">
+                    <label htmlFor="passsword">Contraseña</label>
+                    <input type="password" className="form-control" placeholder="Password" />
+                </div><br/>
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Mantener sesión</label>
+                    </div>
+                </div><br/>
+                <button type="submit" className="btn btn-primary btn-block">Entrar</button>
+                <p className="forgot-password text-righ"><br/>
+                    <a href="#">Olvido su contraseña?</a>
+                </p>
+          </form>
+          {close}
+        </article>
       </div>
     )
   }

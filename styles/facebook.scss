@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#facebook-button {
+  background-color: #2980b9;
+  transition: background-color 0.25s ease-in-out;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: space-around;
+  padding: 10px;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
+  border: none;
+  width: 220px;
+
+  &:hover {
+    background-color: #20517C;
+    cursor: pointer;
+  }
+}
